@@ -10,17 +10,18 @@ require 'israel'
 module Israel
   module DevOps
     def call_for_papers(speaker, subject)
-      apply(spekaer) if ["Continuous Deployment", 
+      apply(speaker) if ["Continuous Deployment", 
                          "DevOps tooling", 
                          "DevOps Case Studies", 
                          "Culture",
                          "Web Operations"].include(subject) 
                         and speaker.available?(Date.new(2013,7,2))
     end
+    
     def apply(speaker)
       # We prefer github, but also settle for goo-ol emails
       if speaker.has_github?
-        speaker.make_pull_request('/devopscon/devopsisrael-summer2013')
+        speaker.submit_pull_request('/devopscon/devopsisrael-summer2013')
       else
         speaker.send_mail('proposals@devopscon.com')
     end
