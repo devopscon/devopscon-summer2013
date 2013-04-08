@@ -1,4 +1,4 @@
-The 2013 Summer Israel DevOps Summer Summit 
+The 2013 Israel DevOps Summer Summit 
 ===========================================
 
 ___Call for papers deadline: June 1, 2013___  
