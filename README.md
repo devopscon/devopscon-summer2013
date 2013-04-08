@@ -10,8 +10,6 @@ require 'israel'
 module Israel
   module DevOps
     def call_for_papers(speaker, subject)
-      # Speakers, please apply for the call for papers if you have talks on the subjects of Continuous 
-      # Deployment, DevOps tooling and DevOps case studies, assuming you are available on Jan 15.
       apply(spekaer) if ["Continuous Deployment", 
                          "DevOps tooling", 
                          "DevOps Case Studies", 
